@@ -1,10 +1,46 @@
-h1, h3 {
+
+h1{
     color: black;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.2;
-    padding: 10px;
-    margin: 0px 500px;
+    font-family: Tahoma;
+    /*line-height: 1.2 (устанавливает величину пространства между строками, например в тексте);
+    padding: 10px; (устанавливает внутренние отступы/поля со всех сторон элемента)*/ 
+    margin: 20px 30%;
+    text-transform: uppercase;
 }
+h3{
+    color: black;
+    font-family: Tahoma;
+    margin: 0% 30%;
+    text-transform: none;
+}
+.image{
+    margin: 0px 40%;
+}
+hr{
+    color: grey;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 20px 30%;
+}
+.comment{
+    color: grey;
+    font-family: Tahoma;
+    margin: 20px 30%;
+}
+.menu{
+    color: rgb(26, 25, 25);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px 30%;
+}
+.tell{
+    color: black;
+    margin: 20px 32%;
+}
+.link{
+    margin: 0px 32%;
+}
+
+/*
 p {
     color: grey;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
