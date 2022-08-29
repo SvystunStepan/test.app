@@ -1,0 +1,45 @@
+h1, h3 {
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    padding: 10px;
+    margin: 0px 500px;
+}
+p {
+    color: grey;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0.9;
+    text-align: left;
+    padding: 10px;
+    margin: 0px 500px;
+}
+ul {
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0.9;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+li {
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0.9;
+    text-align: left;
+    padding: 5px;
+    margin: 0px 550px;
+}
+div {
+    color: blue;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0.9;
+    text-align: left;
+    padding: 5px;
+    margin: 0px 550px;
+}
+hr {
+    color: grey;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0px 500px;
+}
