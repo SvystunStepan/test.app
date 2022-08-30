@@ -1,81 +1,58 @@
 
-h1{
+.title{
     color: black;
     font-family: Tahoma;
-    /*line-height: 1.2 (устанавливает величину пространства между строками, например в тексте);
-    padding: 10px; (устанавливает внутренние отступы/поля со всех сторон элемента)*/ 
-    margin: 20px 30%;
+    text-align: center;
     text-transform: uppercase;
 }
-h3{
-    color: black;
-    font-family: Tahoma;
-    margin: 0% 30%;
-    text-transform: none;
+
+.img{
+    display: block;
+    margin: 20px auto;
 }
-.image{
-    margin: 0px 40%;
-}
-hr{
-    color: grey;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin: 20px 30%;
-}
+
 .comment{
     color: grey;
     font-family: Tahoma;
-    margin: 20px 30%;
-}
-.menu{
-    color: rgb(26, 25, 25);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 20px 30%;
-}
-.tell{
-    color: black;
-    margin: 20px 32%;
-}
-.link{
-    margin: 0px 32%;
+    text-transform: none;
+    width: 500px;
+    margin: auto;
 }
 
-/*
-p {
-    color: grey;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 0.9;
-    text-align: left;
-    padding: 10px;
-    margin: 0px 500px;
-}
-ul {
+.item{
     color: black;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 0.9;
-    text-align: center;
-    padding: 10px;
-    margin: 0px;
+    font-family: Tahoma;
+    width: 500px;
+    margin: auto;   
+    text-transform: none;
 }
-li {
-    color: black;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 0.9;
-    text-align: left;
-    padding: 5px;
-    margin: 0px 550px;
+
+.menu{
+    color: rgb(26, 25, 25);
+    font-size: 14px;
+    font-family: cursive;
+    width: 500px;
+    margin: auto;
 }
-div {
+
+.tell{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-transform: none;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.link{
     color: blue;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 0.9;
-    text-align: left;
-    padding: 5px;
-    margin: 0px 550px;
+    font-size: 14px;
+    width: 400px;
+    margin: 20px auto;
 }
-hr {
+
+hr{
     color: grey;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin: 0px 500px;
+    width: 500px;
+    margin: 20px auto;
 }
