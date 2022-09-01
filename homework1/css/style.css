@@ -1,58 +1,56 @@
 
-.title{
-    color: black;
-    font-family: Tahoma;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.img{
-    display: block;
-    margin: 20px auto;
-}
-
-.comment{
-    color: grey;
-    font-family: Tahoma;
-    text-transform: none;
-    width: 500px;
-    margin: auto;
-}
-
-.item{
-    color: black;
-    font-family: Tahoma;
-    width: 500px;
-    margin: auto;   
-    text-transform: none;
-}
-
-.menu{
-    color: rgb(26, 25, 25);
-    font-size: 14px;
-    font-family: cursive;
-    width: 500px;
-    margin: auto;
-}
-
-.tell{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    text-transform: none;
-    width: 400px;
-    margin: 20px auto;
-}
-
-.link{
-    color: blue;
-    font-size: 14px;
-    width: 400px;
-    margin: 20px auto;
-}
-
-hr{
-    color: grey;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    width: 500px;
-    margin: 20px auto;
+body{
+    font-family: Arial, Tahoma, sans-serif;
+    }
+    .title{
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        }
+        .img{
+        text-align: center
+        }
+    .comment{
+        color: grey;
+        text-transform: none;
+        max-width: 500px;
+        margin: auto;
+        padding: 5px 0px;   
+        border-bottom: 1px solid gray;
+        }
+    .item{
+        color: black;
+        max-width: 500px;
+        margin: auto;   
+        text-transform: none;
+        }
+        .menu{
+            color: rgb(26, 25, 25);
+            font-size: 14px;
+            font-family: cursive;
+            max-width: 500px;
+            margin: auto;
+            padding-bottom: 20px;
+            border-bottom: 1px solid gray;
+            }
+    .tell{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        text-transform: none;
+       /* width: 400px;*/
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    .item_link{
+        color: black;
+        max-width: 500px;
+        margin: auto;   
+        text-transform: none;
+        border-bottom: 1px solid gray;
+        }
+        .link{
+            color: blue;
+            font-size: 14px;
+            max-width: 400px;
+            margin: 20px auto;
 }
