@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+	line-height: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    ol, ul {
+	    list-style: none;
+        }
+
+.vertical_line { 
+    border-left: 2px solid #c4c4c4;
+    border-right: 2px solid #c4c4c4;
+    height: auto;
+    margin: 0px 150px;
+    padding: 0px 50px;  
+    }
+
+    .content{
+    margin: auto;
+    display: block;
+    }
+
+        .title{
+            font-size: 50px;
+            font-family: Courier, monospace;
+            font-weight: 900;
+            padding:30px 0px;
+        }
+
+        .header{
+           
+            height: 50px;
+            background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(145,144,144,1) 72%);
+            padding: 0px 0px;
+        }
+        .header span {
+            color: white;
+            text-align: center;
+            display: inline-block;
+            background-color: transparent;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            padding-top: 15px;
+        }
+            .header span:hover {
+                box-sizing: border-box;
+                padding: 15px;
+                border: 0px;
+                -webkit-box-sizing: border-box;
+                color: #fff;
+    	        background: #333;
+                border-left: solid 1px white;
+                border-right: solid 1px white;
+            }
+
+        .container {
+            display: table;
+            width: 100%;
+            padding-top: 50px;
+            }
+            * html .container {
+                margin-left: -3px;
+            }               
+            .left_Column{
+                float: left;
+                width: 300px;
+                /*margin: auto;
+                padding: 20px 0;*/
+                }
+                .left_Column li{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: gray;
+                    font-size: 16px;
+                    text-align: left; 
+                    padding: 15px 30px;  
+                    background-color: transparent;
+                    border: 1px solid #ccc;
+                    display: block;
+                    cursor: pointer;
+                    }
+                    .left_Column span:hover{
+                        box-sizing: border-box;
+                        padding: 15px;
+                        border: 0px;
+                        -webkit-box-sizing: border-box;
+                        color: black;
+    	                background: transparent;
+                        }
+            .right_Column {
+                margin-left: 350px;
+                }
+                img {
+                    text-align: left;
+                    padding: 0px 75px;
+                    height: auto;
+                    border: 1px solid #ccc;
+                    }
+                    p{
+                        font-family: tahoma, arial;
+                        font-size: 15px;
+                        line-height: 25px;
+                        letter-spacing: 1px;
+                        color: #333;
+                        padding: 40px 30px;
+                        background: transparent;
+                        clear: both;
+                        }
+        .bottom{
+            position: relative;
+            height: 50px;
+            background: rgb(219, 217, 217);
+            margin-bottom: 70px;
+            }
+            .bottom li{
+                border: 0;
+                margin: auto;
+                padding: 15px 40px 15px 10px;
+            }
+            .bottom a {
+                text-decoration: none;               
+                color: rgb(95, 94, 94);
+                font-size: 14px;              
+                margin: 30px;              
+                }
+                .bottom a:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    }
+            .copy{
+                position: static;
+                
+                padding-left: 370px;
+                
+            
+                
+            }
+
+
+
