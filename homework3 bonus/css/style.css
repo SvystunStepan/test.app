@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body { 
+    font-family: Tahoma;
+	line-height: 1; /*normal*/
+    max-width: 960px;
+    height: 883px;
+    margin: 0 auto; 
+    line-height: 1.2;
+    }
+    ol, ul {
+	    list-style: none;
+        }
+    .container {
+        color: #e6e6e6;
+        margin: 0px 70px 0px 67px;
+        }
+        .logo {
+            max-width: 263px;
+            margin: 132px 626px 0px 0px;
+        }
+        .palm{
+            opacity: 0.14;
+            max-width: 125px;
+            margin: -114px 623px 0px 141px;
+        }
+        .left{
+            font-size: 10px;
+            font-weight: 700;
+            margin: -32px 550px 14px 84px;
+            }
+        .right{
+            margin: -51px 0px 0px 713px;
+            }
+            p:first-child{
+                font-size: 10px;
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+            p:nth-child(2){
+                font-size: 8px;
+                font-weight: 400;
+            }
+            p:last-child{
+                font-size: 8px;
+                font-weight: 400;
+            }
+
+    .content_top{
+        margin: 12px 0px 62px 0px;
+        max-width: 960px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content_top p{
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        position: relative;
+        bottom: -185px;
+
+        
+    }
+    .content_bottom{
+        max-width: 960px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content_bottom p{
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        position: relative;
+        bottom: -185px;
+    }
+    .india{
+        width: 270px;
+        height: 188px;
+        background-image: url('../image/ramka.png');
+        position: relative;
+        }
+        .india:after {
+        content: "  ";
+        width: 260px;
+        height: 178px;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        z-index: -1;
+        background-image: url('../image/india_photo.jpg');
+        }
+    .nepal{
+        width: 270px;
+        height: 188px;
+        background-image: url('../image/ramka.png');
+        position: relative;
+        }
+        .nepal:after {
+        content: "  ";
+        width: 260px;
+        height: 178px;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        z-index: -1;
+        background-image: url('../image/nepal_photo.jpg');
+        }
+    .tibet{
+        width: 270px;
+        height: 188px;
+        background-image: url('../image/ramka.png');
+        position: relative;
+        }
+        .tibet:after {
+        content: "  ";
+        width: 260px;
+        height: 178px;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        z-index: -1;
+        background-image: url('../image/tibet_photo.jpg');
+        }
+    .bhutan{
+        width: 270px;
+        height: 188px;
+        background-image: url('../image/ramka.png');
+        position: relative;
+        }
+        .bhutan:after {
+        content: "  ";
+        width: 260px;
+        height: 178px;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        z-index: -1;
+        background-image: url('../image/bhutan_photo.jpg');
+        }
+    .sri_lanka{
+        width: 270px;
+        height: 188px;
+        background-image: url('../image/ramka.png');
+        position: relative;
+        }
+        .sri_lanka:after {
+        content: "  ";
+        width: 260px;
+        height: 178px;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        z-index: -1;
+        background-image: url('../image/sri_lanka_photo.jpg');
+        }
+    .maldives{
+        width: 270px;
+        height: 188px;
+        background-image: url('../image/ramka.png');
+        position: relative;
+        }
+        .maldives:after {
+        content: "  ";
+        width: 260px;
+        height: 178px;
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        z-index: -1;
+        background-image: url('../image/maldives_photo.jpg');
+        }         
+    .copyright{
+        font-size: 10px;
+        font-weight: 400;
+        text-align: center;
+        position: relative;
+        bottom: -210px;
+    }
