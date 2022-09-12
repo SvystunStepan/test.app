@@ -51,15 +51,15 @@ html {
   box-sizing: inherit;
 }
 .page{
-	background-color: #ffffff; 
+	background-color: #00749b;
     background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: 1280px;
-  	background-position: top center;
- 	min-height: 100vh;
-	max-height: max-content;
- 	display: flex;
-  	flex-direction: column;
+    background-position: top center;
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
 }
 .container{
 	margin-left: 140px;
@@ -229,8 +229,11 @@ html {
 		border-right: 1px solid #c7cacf;
 		padding: 12px 24px 0px 15px;
 	}
+	.center {
+		width: 58%;
+		padding: 12px 15px;
+	}
 	.right {
-		display: block;
 		width: 21%;
 		background-color: #edeef0;
 		border-left: 1px solid #c7cacf;
@@ -251,7 +254,7 @@ html {
 		}
 .footer {
   text-align: center;
-  margin-top: auto;
+  margin-bottom: 0;
   padding: 8px 0px 11px 0px;
 }
 .footer p {
