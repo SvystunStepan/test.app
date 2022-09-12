@@ -55,7 +55,7 @@ html {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: 1280px;
-  	background-position: center;
+  	background-position: top center;
  	min-height: 100vh;
 	max-height: max-content;
  	display: flex;
