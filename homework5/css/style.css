@@ -168,9 +168,9 @@ main{
 	.content{
 		background-color: rgba(0,0,0,0.6);
 		width: 560px;
-		max-height: 613px;
+		height: 613px;
 		position: absolute;
-		top: 207px;
+		top: 243px;
 		left: 50%;
   		transform: translateX(-50%);
 		display: flex;
