@@ -25,9 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	max-width: 1215px;
-	margin-left: auto;
-	margin-right: auto;
 }
 a{
 	text-decoration: none;
@@ -59,10 +56,12 @@ html {
 header{
 	background-color: #000000;
 	max-height: 36px;
-	max-width: 1215px;
+	min-width: 800px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	margin-left: auto;
+	margin-right: auto;
 	}
 	.item{
 	display: flex;
@@ -71,7 +70,14 @@ header{
 	}
 	.item .item-main{
 		text-align: center;
+		width: 70px;
 		}
+		.item-main:first-child{
+			width: 120px;
+			}
+		.item-main:nth-child(4){
+			width: 80px;
+			}
 		.item .title{
 			display: block;
 			padding: 11px 10px;
@@ -80,7 +86,7 @@ header{
 			font-weight: 400;
 			color: #60b5ed;
 			box-sizing: border-box;
-			transition: all 500ms ease; 
+			transition: all 500ms ease;
 			}
 			.item .title:hover{
 				font-weight: 700;
@@ -117,7 +123,6 @@ header{
 		margin-right: 20px;
 		background: rgb(46,123,197);
 		background: linear-gradient(0deg, rgba(46,123,197,1) 0%, rgba(77,171,218,1) 70%);
-		/*background-image: linear-gradient(0.0deg, rgba(0,0,0,0.29) -13%, rgba(0,0,0,0.29) 11%, rgba(255,255,255,0.29) 116%);*/
 		border-style: solid;
 		border-width: 1px;
 		border-image-source: linear-gradient(0.0deg, #4299d2 0%, #65a8e4 100%);
@@ -160,17 +165,16 @@ header{
 main{
 	background-image: url(../images/background_copy_416.png);
 	background-repeat: no-repeat;
-    background-size: 1215px;
+    background-size: 100%;
     background-position: top center;
-    min-height: 1028px;
-    max-height: max-content;
+	min-height: 100vh;
 	}
 	.content{
 		background-color: rgba(0,0,0,0.6);
 		width: 560px;
 		height: 613px;
 		position: absolute;
-		top: 243px;
+		margin: 5% auto;
 		left: 50%;
   		transform: translateX(-50%);
 		display: flex;
@@ -198,7 +202,7 @@ main{
 	.broken-line{
 		width: 276px;
 		max-height: 74px;
-		margin: 36px 0px 29px 0px;
+		margin: 36px 0px;
 		position: relative;
 		display: flex;
 		justify-content: space-between;
@@ -238,7 +242,7 @@ main{
 		position: relative;
 		width: 276px;
 		height: 35px;
-		margin: 7px 0px;
+		margin-bottom: 15px;
 		padding-left: 19px;
 		font-size: 14px;
 		line-height: 16px;
@@ -252,40 +256,30 @@ main{
 			color: #fffbfb;
 			background-image: linear-gradient(0.0deg, #1b5288 0%, #1b5288 100%);
 			}
-	.checkbox{
-		align-self: flex-start;
-		margin-left: 142px;
-		padding-top: 16px;
+	label{
+		display: inline-block;
+		margin-left: 0;
+		margin-top: 8px;
 		font-size: 14px;
 		line-height: 16px;
 		font-weight: 400;
 		color: #cccccc;
+		opacity: 0.7;
 		}
-		label{
-			opacity: 0.7;
-			}
-	.create{
+	.cre-my-acc{
+		padding: 0;
 		margin-top: 21px;
-		max-width: 151px;
-		max-height: 37px;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 700;
+		color: #ffffff;
 		background: rgb(46,123,197);
 		background: linear-gradient(0deg, rgba(46,123,197,1) 0%, rgba(77,171,218,1) 70%);
 		border-radius: 5px;
 		border-image-source: linear-gradient(0.0deg, #4299d2 0%, #65a8e4 100%);
-		border-image-slice: 1;
-		background-origin: border-box;
-		background-clip: content-box, border-box;
-		}
-		.create input{
-			padding: 12px 14px 11px 13px;
-			font-size: 14px;
-			line-height: 16px;
-			font-weight: 700;
-			color: #ffffff;
-			background: transparent;
-			border: none;
-			cursor: pointer;
-			}
+		border-width: 0px;
+		cursor: pointer;
+	}
 	.content-footer{
 		margin: 19px 128px 19px 123px;
 		text-align: center;
