@@ -2,68 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework5</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <style>
+        body{
+        background-image: url(images/background_copy_416.png);
+	    background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top center;
+	    min-height: 100vh;}
+    </style>
 </head>
 <body>
     <header>
-        <div class="item">
-            <a href="#" class="item-main">
-                <span class="title">Meu YouBike</span>
-            </a>
-            <a href="#" class="item-main">
-                <span class="title">Vender</span>
-            </a>
-            <a href="#" class="item-main">
-                <span class="title">Forum</span>
-            </a>
-            <a href="#" class="item-main">
-                <span class="title">Contato</span>
-            </a>
-            <a href="#" class="item-main">
-                <span class="title">Ajuda</span>
-            </a>
-        </div>
-        <div class="ofertas">
-            <a href="#" class="ofertas-flag">
-                <img src="images/inventicons_29_336.png" alt="Error">
-            </a>
-            <a href="#" class="ofertas-of">
-                <span class="title">Minhas Ofertas</span>
-            </a>
-        </div>
-        <div class="login">
-            <a href="#" class="login-entrar">
-                <span class="title">Entrar</span>
-            </a>
-            <a href="#" class="login-cadastre-se">
-                <span class="title">Cadastre-se</span>
-            </a>
+        <div class="container">
+            <div class="item">
+                <a href="#" class="item-main">
+                    <span class="title">Meu YouBike</span>
+                </a>
+                <a href="#" class="item-main">
+                    <span class="title">Vender</span>
+                </a>
+                <a href="#" class="item-main">
+                    <span class="title">Forum</span>
+                </a>
+                <a href="#" class="item-main">
+                    <span class="title">Contato</span>
+                </a>
+                <a href="#" class="item-main">
+                    <span class="title">Ajuda</span>
+                </a>
+            </div>
+            <div class="ofertas">
+                <a href="#" class="ofertas-flag">
+                    <img src="images/inventicons_29_336.png" alt="Error">
+                </a>
+                <a href="#" class="ofertas-of">
+                    <span class="title">Minhas Ofertas</span>
+                </a>
+            </div>
+            <div class="login">
+                Ola!
+                <a href="#" class="login-entrar">
+                    <span class="title">Entrar</span>
+                </a>
+                ou
+                <a href="#" class="login-cadastre-se">
+                    <span class="title">Cadastre-se</span>
+                </a>
+            </div>
         </div>
     </header>
     <main>
         <div class="content">
-            <div class="title">
-                <h1>Cadastre-se</h1>
+            <h1 class="title">Cadastre-se</h1>
+            <div class="facebook">
+                <a class="button" href="https://www.facebook.com/" target="_blank">
+                    <img class="logo" src="images/facebook-logo.png" alt="Error"> 
+                    <p> Log In with Facebook</p>
+                    <p>&rsaquo;</p>
+                </a>
             </div>
-            <a href="https://www.facebook.com/" class="facebook" target="_blank">
-                <img src="images/layer_3_copy_418.png" alt="Error">
-            </a>
             <div class="broken-line">
                 <h3>OU</h3>
             </div>
-            <form>
-                <input type="text" id="inform" placeholder="First Name">
-                <input type="text" id="inform" placeholder="Last Name">
-                <input type="email" id="inform" placeholder="Email Address">
-                <input type="password" id="inform" placeholder="Choose Password">
-                <input type="password" id="inform" placeholder="Password Confirm">
-                <input type="checkbox"><label>Send me Youbike updates and tips</label>
+            <form class="personal-data">
+                <input type="text" id="first-name" placeholder="First Name">
+                <input type="text" id="last-name" placeholder="Last Name">
+                <input type="email" id="email" placeholder="Email Address">
+                <input type="password" id="password" placeholder="Choose Password">
+                <input type="password" id="password-confirm" placeholder="Password Confirm">
+                <label class="checkbox-reg"><input type="checkbox">Send me Youbike updates and tips</label>
+                <button class="registration-btn" type="submit">Create my Account</button>
             </form>
-            <button class="cre-my-acc" type="button" style = "width: 151px; height:37px">Create my Account</button>
             <div class="content-footer">
-                <h6>By clicking the button above, you agree to the Terms of Service
-                    Xiew our Privacy Policy.</h6>
+                By clicking the button above, you agree to the Terms of Service
+                    Xiew our Privacy Policy.
             </div>
         </div>
     </main>
