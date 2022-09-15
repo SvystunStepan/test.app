@@ -17,7 +17,10 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    font-family: Tahoma, Arial, sans-serif;
+	font-family: Tahoma, Arial, sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
+	/*font-family: 'Oswald', sans-serif;
+	font-family: 'Comfortaa', cursive;*/
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -56,12 +59,17 @@ html {
 header{
 	background-color: #000000;
 	max-height: 36px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+	.container{
 	min-width: 800px;
+	max-height: 36px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	margin-left: auto;
-	margin-right: auto;
 	}
 	.item{
 	display: flex;
@@ -73,7 +81,7 @@ header{
 		width: 70px;
 		}
 		.item-main:first-child{
-			width: 120px;
+			min-width: 120px;
 			}
 		.item-main:nth-child(4){
 			width: 80px;
@@ -101,6 +109,7 @@ header{
 			}
 	.ofertas{
 		max-height: 36px;
+		min-width: 137px;
 		margin: 6px 17px 7px 19px;
 		}
 		.ofertas .ofertas-flag{
@@ -118,174 +127,161 @@ header{
 				color: #fefefe;
 				}
 	.login{
-		width: 191px;
-		height: 36px;
+		min-width: min-content;
+		max-height: 36px;
 		margin-right: 20px;
 		background: rgb(46,123,197);
 		background: linear-gradient(0deg, rgba(46,123,197,1) 0%, rgba(77,171,218,1) 70%);
-		border-style: solid;
-		border-width: 1px;
-		border-image-source: linear-gradient(0.0deg, #4299d2 0%, #65a8e4 100%);
-		border-image-slice: 1;
-		background-origin: border-box;
-		background-clip: content-box, border-box;
+		padding: 11px 12px;
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: 400;
+		color: #ffffff;
 		}
 		.login .title{
-			display: inline-block;
+			color: #ffffff;
 			text-decoration: underline;
-			color: #feffff;
-			font-size: 14px;
-			line-height: 14px;
-			font-weight: 400;
 		}
-		.login .login-entrar{
-			float: left;
-			margin-left: 11px;
-			margin-top: 9px;
-			}
-			.login-entrar::before{
-				content: 'Ola!';
-				font-size: 14px;
-				color: #ffffff;
-				text-decoration: none;
-				cursor: auto;
-				}
-		.login .login-cadastre-se{
-			float: right;
-			margin-right: 11px;
-			margin-top: 9px;
-			}
-			.login-cadastre-se::before{
-				content: 'ou';
-				font-size: 14px;
-				color: #feffff;
-				text-decoration: none;
-				cursor: auto;
-				}
 main{
-	background-image: url(../images/background_copy_416.png);
-	background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top center;
-	min-height: 100vh;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 	}
 	.content{
 		background-color: rgba(0,0,0,0.6);
 		width: 560px;
 		height: 613px;
-		position: absolute;
 		margin: 5% auto;
-		left: 50%;
-  		transform: translateX(-50%);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		}
-	.content .title{
-		width: 560px;
-		text-align: center;
-		font-size: 24px;
-		line-height: 16px;
-		font-weight: 400;
-		color: #ffffff;
-		padding: 21px 0px;
-		border-bottom: 2px solid grey;
-	}
-	.facebook{
-		max-width: 276px;
-		max-height: 35px;
-		margin-top: 36px;
-		}
-		.facebook:hover{
-		transform: scale(0.97);
-		}
-	.broken-line{
-		width: 276px;
-		max-height: 74px;
-		margin: 36px 0px;
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		}
-		.broken-line:before{
-			content: '';
-			display: block;
-			left: 0;
-			width: 44%;
-			height: 2px;
-			position: absolute;
-			background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 50%, rgba(102,102,102,1) 85%);
-			margin-top: calc(50%-2px);
-			}
-		.broken-line:after{
-			content: '';
-			display: block;
-			right: 0;
-			width: 44%;
-			height: 2px;
-			position: absolute;
-			background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 50%, rgba(102,102,102,1) 85%);
-			margin-top: calc(50%-2px);
-			}
-		h3{
-			display: block;
-			margin: -7px auto;
+		.content .title{
+			width: 560px;
 			text-align: center;
-    		padding: 0px 5px;
-			font-size: 14px;
+			font-size: 24px;
 			line-height: 16px;
 			font-weight: 400;
-			color: #999999;
+			color: #ffffff;
+			padding: 21px 0px;
+			border-bottom: 2px solid grey;
 			}
-	#inform{
-		display: block;
-		position: relative;
-		width: 276px;
-		height: 35px;
-		margin-bottom: 15px;
-		padding-left: 19px;
-		font-size: 14px;
-		line-height: 16px;
-		font-weight: 400;
-		color: #cccccc;
-		border: none;
-		background-image: linear-gradient(0.0deg, #111111 0%, #0e0d0d 100%);
-		box-shadow: 0px 1px 0px 0px #4b4b4b, inset 0px 2px 5px 0px rgba(29,26,22,0.2);
-		}
-		#inform:hover{
-			color: #fffbfb;
-			background-image: linear-gradient(0.0deg, #1b5288 0%, #1b5288 100%);
+		.facebook{
+			max-width: 276px;
+			max-height: 36px;
+			margin-top: 36px;
+			background: rgb(100,125,213);
+			background: linear-gradient(180deg, rgba(100,125,213,1) 0%, rgba(51,80,145,1) 9%, rgba(51,80,145,1) 94%, rgba(40,61,106,1) 97%);
 			}
-	label{
-		display: inline-block;
-		margin-left: 0;
-		margin-top: 8px;
-		font-size: 14px;
-		line-height: 16px;
-		font-weight: 400;
-		color: #cccccc;
-		opacity: 0.7;
-		}
-	.cre-my-acc{
-		padding: 0;
-		margin-top: 21px;
-		font-size: 14px;
-		line-height: 16px;
-		font-weight: 700;
-		color: #ffffff;
-		background: rgb(46,123,197);
-		background: linear-gradient(0deg, rgba(46,123,197,1) 0%, rgba(77,171,218,1) 70%);
-		border-radius: 5px;
-		border-image-source: linear-gradient(0.0deg, #4299d2 0%, #65a8e4 100%);
-		border-width: 0px;
-		cursor: pointer;
-	}
-	.content-footer{
-		margin: 19px 128px 19px 123px;
-		text-align: center;
-		font-size: 11px;
-		line-height: 16px;
-		font-weight: 400;
-		color: #cccccc;
-		opacity: 0.7;
-	}		
+			.facebook .button{
+				position: relative;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				width: 276px;
+				color: #ffffff;
+				font-family: 'Oswald', sans-serif;
+				font-size: 14px;
+				font-weight: 600;
+				letter-spacing: 0.3px;
+				}
+			.logo{
+				max-height: 30px;
+				padding-right: 9px;
+				border-right: 2px ridge rgb(100,125,213);
+				}
+			.facebook:hover{
+				transform: scale(0.97);
+				}
+		.broken-line{
+			width: 276px;
+			height: 74px;
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			}
+			.broken-line:before{
+				content: '';
+				width: 44%;
+				height: 2px;
+				background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 50%, rgba(102,102,102,1) 85%);
+				}
+			.broken-line:after{
+				content: '';
+				width: 44%;
+				height: 2px;
+				background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 50%, rgba(102,102,102,1) 85%);
+				}
+			h3{
+				display: block;
+				margin: -7px auto;
+    			padding: 0px 5px;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #999999;
+				}
+		.personal-data{
+			max-width: 276px;
+			height: 338px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			}
+			form input{
+				position: relative;
+				width: 276px;
+				height: 35px;
+				padding-left: 19px;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #cccccc;
+				background-image: linear-gradient(0.0deg, #111111 0%, #0e0d0d 100%);
+				border: 0;
+				border-bottom: 1px solid gray;
+				}
+				form input:hover{
+					color: #fffbfb;
+					background-image: linear-gradient(0.0deg, #1b5288 0%, #1b5288 100%);
+					}
+			.checkbox-reg{
+				display: inline-flex;
+				align-self: flex-start;
+				align-items: center;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #cccccc;
+				opacity: 0.7;
+				}
+				label input{
+					margin-right: 10px;
+					width: 15px;
+					}
+			.registration-btn{
+				align-self: center;
+				width: 155px;
+				padding: 12px;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 700;
+				color: #ffffff;
+				background: rgb(46,123,197);
+				background: linear-gradient(0deg, rgba(46,123,197,1) 0%, rgba(77,171,218,1) 70%);
+				border-radius: 5px;
+				border-width: 0px;
+				cursor: pointer;
+				}
+			.content-footer{
+				margin: 19px 128px 19px 123px;
+				text-align: center;
+				font-size: 11px;
+				line-height: 16px;
+				font-weight: 400;
+				color: #cccccc;
+				opacity: 0.7;
+				}		
