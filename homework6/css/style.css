@@ -310,8 +310,8 @@ main{
 							background-size: 17px auto, 100%;
 							}
 			.search-btn{
-				text-align: right;
-				position: relative;
+				width: max-content;
+				align-self: flex-end;
 				cursor: pointer;
 				border:none; 
 				padding:0; 
