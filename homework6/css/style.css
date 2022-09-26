@@ -19,6 +19,18 @@ time, mark, audio, video {
 	vertical-align: baseline;
     font-family: Tahoma, Arial, sans-serif;
 }
+@font-face {
+    font-family: 'Lucida Sans Unicode';
+    src: url('../fonts/LucidaSansUnicode.eot');
+    src: url('../fonts/LucidaSansUnicode.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LucidaSansUnicode.woff2') format('woff2'),
+        url('../fonts/LucidaSansUnicode.woff') format('woff'),
+        url('../fonts/LucidaSansUnicode.ttf') format('truetype'),
+        url('../fonts/LucidaSansUnicode.svg#LucidaSansUnicode') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -451,30 +463,26 @@ main{
 				padding-left: 2px;
 				margin-bottom: 15px;
 				}
-				.border li{
-					display: inline-block;
+				.border .sub-item{
+					box-shadow: none;
 					width: 150px;
-					height: 28px;
-					background-color: #ffffff;
-					border: 1px solid #79878d;
-					border-radius: 13px;
-					}	
-						.border li a{
-							font-family: 'Lucida Sans Unicode';
-							font-size: 14px;
-							line-height: 25px;
-							font-weight: 400;
-							color: #114165;
-							margin-left: 2px;
-							display: inline-flex;
-							align-items: center;
+					margin: 5px 0;
+					}
+						.item-left{
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							margin: 3px 0 3px 30px;	
 						}
 						.item-left li{
 							background-color: transparent;
 							border: none;
 							box-shadow: none;
+							line-height: 25px;
+							
 							}
 							.item-left li a{
+								font-family: Arial;
 								font-size: 12.8px;
 								color: #465961;
 								float: right;
@@ -485,25 +493,24 @@ main{
 								font-style: italic;
 								text-decoration: underline;
 								color: #0c3256;
+								transform: translateX(3px);
 							}
-		.sidebar-center{
+		.content-main{
 			width: 527px;
 			height: 628px;
 			margin-left: 8px;
 			background-color: #ffffff;
 			background-image: linear-gradient(0.0deg, rgba(35,75,93,0.48) 0%, rgba(201,207,209,0.48) 100%);
-			
 			}
 			.flex{
 				width: 476px;
 				height: 584px;
 				margin:20px 25px 29px 25px;
 			}
-			.row1{
+			.row{
 				display: flex;
-				flex-direction: row;
+				flex-wrap: wrap;
 				justify-content: space-between;
-				margin-bottom: 30px;
 				}
 				.cards-item{
 					font-family: 'Lucida Sans Unicode';
@@ -514,12 +521,16 @@ main{
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+					margin-bottom: 25px;
 					}
 				.cards-item h3{
 					font-size: 12.8px;
 					font-weight: 400;
 					color: #1f2528;
 					line-height: 14px;
+				}
+				.cards-item h4{
+					margin-top: 5px;
 				}
 				.fon{
 					width: 140px;
@@ -534,7 +545,7 @@ main{
 			width: 183px;
 			height: 310px;
 		}
-		.sidebar-right a{
+		.sub-item{
 			width: 183px;
 			height: 27px;
 			background-color: #ffffff;
@@ -546,14 +557,15 @@ main{
 			line-height: 28px;
 			font-weight: 400;
 			color: #0c3256;
-			display: block;
 			display: flex;
-			padding-left: 2px;
+			align-items: center;
+			justify-content: flex-start;
+			padding-left: 3px;
 			}
 			.item-right{
 				margin: 15px 14px 0 0;
 				}
-				.item-right a{
+				.item-right .sub-item{
 					margin: 14px 0 0 15px;
 					width: 136px;
 					height: 28px;
@@ -561,14 +573,31 @@ main{
 					border: 1px solid #79878d;
 					box-shadow: none;
 				}
+				.circle{
+					width: 23px;
+					height: 23px;
+					border-radius: 50%;
+					background-color: #114165;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				.circle img{
+					width: 12px;
+					height: 12px;
+					background-color: #ffffff;
+					border-radius: 50%;
+				}
 				.item-right form{
 					font-family: 'Lucida Sans Unicode';
 					font-size: 12.8px;
 					line-height: 25px;
 					font-weight: 400;
 					color: #465961;
+					display: flex;
+					flex-direction: column;
 				}
-				.item-right p{
+				.item-right label{
 					margin: 5px 0 0 25px;
 				}
 				.item-right input{
@@ -595,12 +624,12 @@ main{
 				margin: 18px 0 0 20px;
 			}
 	.brends{
-		width: 690px;
+		width: 676px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 38px 0 24px 0;
-		display: block;
+		align-items: center;
 		}
 		.brends img{
 			margin: 0 4px;
