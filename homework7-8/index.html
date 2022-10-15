@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework7-8</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/app.js"></script>
+</head>
+<body>
+    <header class="header ">
+        <nav class="nav">
+            <div class="container flex">
+                <div class="logo">PINGBULL<span>ER</span></div>
+                <ul class="menu">
+                    <li class="relative"><a href="">Home</a>
+                        <ul class="submenu">
+                            <li><a href="">Page 1</a></li>
+                            <li><a href="">Page 2</a></li>
+                            <li><a href="">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Dolor Sit Amet</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Home</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Products</a>
+                        <a href="#">Lorem Ipsum</a>
+                        <a href="#">Dolor Sit Amet</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="sliders">
+            <div class="container">
+                <div class="slide-content">
+                    <input type="radio" name="point" id="slide1" checked>
+                    <input type="radio" name="point" id="slide2">
+                    <input type="radio" name="point" id="slide3">
+                    <input type="radio" name="point" id="slide4">
+                    <div class="slider">
+                        <div class="slides slide1">
+                            <div class="slider-text">
+                                <h2>Lorem Ipsum Dolor</h2>
+                                <h4>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h4>
+                                <p>Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+                            </div>
+                            <div class="slider-cards">
+                                <img class="phone-background" src="images/iphone_4_copy_464.png" alt="">
+                                <img class="phone-foreground" src="images/iphone_4_465.png" alt="">
+                                <div class="circle1">
+                                    <div class="circle2">
+                                        <a href="#">
+                                            <div class="circle3">
+                                                <div class="triangle"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slides slide2">SLIDE 2</div>
+                        <div class="slides slide3">SLIDE 3</div>
+                        <div class="slides slide4">SLIDE 4</div>
+                    </div>
+                    <div class="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                </div>
+            </div>
+            <ul class="slider-arrows">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="section">
+            <div class="container flex">
+                <div class="blurbs">
+                    <div class="icon">
+                        <svg display="none">
+                            <symbol id="wrench" viewBox="-30 0 35 35">
+                                <g>
+                                <path transform="scale(-1, 1)" d="M28.7,6.7c-0.1-0.3-0.4-0.5-0.7-0.6c-0.3-0.1-0.7,0-0.9,0.3l-2,2l-1.1-0.3L23.6,7l2-2c0.2-0.2,0.3-0.6,0.3-0.9  c-0.1-0.3-0.3-0.6-0.6-0.7C23,2.5,20.5,3,18.8,4.7c-1.5,1.5-2.1,3.7-1.5,5.8l-6.8,6.8c-2.1-0.6-4.3,0-5.8,1.5  C3,20.5,2.5,23,3.3,25.3c0.1,0.3,0.4,0.5,0.7,0.6c0.3,0.1,0.7,0,0.9-0.3l2-2l1.1,0.3L8.4,25l-2,2c-0.2,0.2-0.3,0.6-0.3,0.9  c0.1,0.3,0.3,0.6,0.6,0.7c0.7,0.3,1.5,0.4,2.2,0.4c1.6,0,3.1-0.6,4.2-1.8c1.5-1.5,2.1-3.7,1.5-5.8l6.8-6.8c2.1,0.6,4.3,0,5.8-1.5  C29,11.5,29.5,9,28.7,6.7z"/>
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg>
+                            <use xlink:href="#wrench"></use>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h4>ABOUT OUR COMPANY</h4>
+                        <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.</p>
+                        <a href="#">READ MORE</a> 
+                    </div>
+                </div>
+                <div class="blurbs">
+                    <div class="icon">
+                        <svg display="none">
+                            <symbol id="chat" viewBox="-550 0 600 600"> <!-- 870 -->
+                                <g>
+                                    <path transform="scale(-1, 1)" d="M256,56C114.62,56,0,135.73,0,234.09c0,57.83,39.62,109.2,101,141.74V451a5,5,0,0,0,8.55,3.51l53.94-54.32a355.9,355.9,0,0,0,92.51,12c141.38,0,256-79.74,256-178.1S397.38,56,256,56Z"/>
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg>
+                            <use xlink:href="#chat"></use>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h4>ABOUT OUR COMPANY</h4>
+                        <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.</p>
+                        <a href="#">READ MORE</a> 
+                    </div>
+                </div>
+                <div class="blurbs">
+                    <div class="icon">
+                        <svg display="none">
+                            <symbol id="note"  viewBox="0 0 21 21"> <!-- 46 -->
+                                <g>
+                                <path d="M5.002,2v4v6.205c-0.684-0.298-1.633-0.298-2.551,0.174c-1.364,0.702-1.749,1.98-1.224,2.791 s1.96,1.152,3.325,0.451c0.982-0.506,1.456-1.311,1.449-2.023V5.8l8-1.6v7.005c-0.685-0.298-1.633-0.298-2.551,0.174c-1.364,0.702-1.749,1.98-1.224,2.791c0.524,0.811,1.959,1.152,3.324,0.451c0.98-0.505,1.455-1.309,1.449-2.021V4V1V0L5.002,2z"/>
+                                </g>
+                            </symbol>
+                        </svg>
+                        <svg>
+                            <use xlink:href="#note"></use>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h4>ABOUT OUR COMPANY</h4>
+                        <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.</p>
+                        <a href="#">READ MORE</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="rex">
+                    <div class="wrapper">
+                        <input type="radio" name="point2" id="testimonial1" checked>
+                        <input type="radio" name="point2" id="testimonial2">
+                        <input type="radio" name="point2" id="testimonial3">
+                        <input type="radio" name="point2" id="testimonial4">
+                        <div class="testimonials-slider">
+                            <div class="testimonials testimonial1">
+                                <div class="white-background">
+                                    <img src="images/layer_82_462.png" alt="">
+                                    <h4>PingbulLer&nbsp; <span>starts here</span></h4>
+                                    <p>“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>    
+                                </div>
+                            </div>
+                            <div class="testimonials testimonial2">TESTIMONIAL_2</div>
+                            <div class="testimonials testimonial3">TESTIMONIAL_3</div>
+                            <div class="testimonials testimonial4">TESTIMONIAL_4</div>
+                        </div>
+                        <div class="testimonials-controls">
+                            <label for="testimonial1"></label>
+                            <label for="testimonial2"></label>
+                            <label for="testimonial3"></label>
+                            <label for="testimonial4"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <h4>RECENT UPDATES</h4>
+                    <div class="blog-box">
+                        <img src="images/layer_69_401.png" alt="">
+                        <div><h6>Nunc turpis neque feugiat eget</h6>
+                        <p>Posted by Admin on March 13 2012 in Recent News</p></div>
+                    </div>
+                    <div class="blog-box">
+                        <img src="images/layer_72_410.png" alt="">
+                        <div><h6>Nunc turpis neque feugiat eget</h6>
+                        <p>Posted by Admin on March 13 2012 in Category</p></div>
+                    </div>
+                    <div class="blog-box">
+                        <img src="images/layer_76_415.png" alt="">
+                        <div><h6>Nunc turpis neque feugiat eget</h6>
+                        <p>Posted by Admin on March 13 2012 in Blog Updates</p></div>
+                    </div>
+                    <a href="#">READ MORE HERE</a>
+                </div>
+            </div>
+        </section>
+        <section class="brends">
+            <div class="container">
+                <ul class="logo-items">
+                    <li><img src="images/logotype1.png" alt=""></li>
+                    <li><img src="images/logotype2.png" alt=""></li>
+                    <li><img src="images/logotype3.png" alt=""></li>
+                    <li><img src="images/logotype4.png" alt=""></li>
+                    <li><img src="images/logotype5.png" alt=""></li>
+                    <li><img src="images/logotype6.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <section class="inform">
+            <div class="container">
+                <div class="inform-left"><h2>PINGBULL<span>ER</span></h2>
+                    <h6>Copyright 2013, Pingbull AS</h6>
+                    <p>Nunc turpis neque, feugiat eget eleif-end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.Nam vitae lectus eu libero pellentesque pul-</p>
+                </div>
+                <div class="inform-center">
+                    <h4>RECENT COMMENTS</h4>
+                    <p>Nunc turpis neque, feugiat eget eleif-end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.Nam vitae lectus eu libero pellentesque pul-vinar. Quisque urna risus, mattis pulvi-nar bibendum in, venenatis quis</p>
+                </div>
+                <div class="inform-right">
+                    <h4>NEWS CATEGORIES</h4>
+                    <p>Nunc turpis neque, feugiat eget eleif-end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.Nam vitae lectus eu libero pellentesque pul-vinar. Quisque urna risus, mattis pulvi-nar bibendum in, venenatis quis</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container flex">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="">Home </a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Dolor Sit Amet</a></li>
+                </ul>
+            </div>
+            <div class="designed">
+                <a href="">Designed by&nbsp;<span>Pingbull AS</span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
