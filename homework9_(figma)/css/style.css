@@ -269,11 +269,7 @@ html {
    flex-wrap: wrap;
    justify-content: space-evenly;
 } */
-.css-wrap p{
-   font-family: 'Circe';
-   font-style: normal;
-   font-weight: 300;
-   font-size: 18px;
+.css-wrap .p-lite{
    line-height: 21px;
    color: #514F4F;
    padding: 17px 0px;
@@ -350,10 +346,6 @@ html {
    max-width: 724px;
 }
 .section3 .p-lite{
-   font-family: 'Circe';
-   font-style: normal;
-   font-weight: 300;
-   font-size: 18px;
    line-height: 19px;
    color: #514F4F;
    max-width: 656px;
@@ -377,19 +369,19 @@ html {
 }
 
 .background-svg{
-   background-image: url(../images/background-svg.svg);
-   width: 574px;
-   height: 511px;
+   background: url(../images/background-svg.svg) no-repeat center;
+   background-size: 100%;
+   max-width: 558px;
+   min-height: 496px;
+   padding: 8% 5% 8% 7%;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   justify-content: center;
-   padding-left: 50px;
+   justify-content: space-evenly;
 }
 .background-svg .p-lite{
    line-height: 19px;
    color: #514F4F;
-   max-width: 422px;
 }
 .subtitle{
    text-align: left;
@@ -409,19 +401,6 @@ html {
    border-radius: 9px;
 }
 
-@media (min-width:1px) and (max-width:575px) {
-   .my-flex1{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-   }
-   .background-svg{
-      padding-bottom: 20px;
-      max-width: 420px;
-      padding-left: 0;
-   }
-}
 
 .vector-b-ground-4>svg{
    width: 736px;
@@ -461,11 +440,7 @@ html {
 .section6 ul {
    list-style: square url(../images/ul-style.svg) outside;
  }
- .section6 li{
-   font-family: 'Circe';
-   font-style: normal;
-   font-weight: 300;
-   font-size: 18px;
+ .section6 .p-lite{
    line-height: 30px;
    color: #514F4F;
 }
@@ -494,11 +469,7 @@ html {
    list-style: square url(../images/ul-style2.svg) outside;
 }
 
-.section7 li{
-   font-family: 'Circe';
-   font-style: normal;
-   font-weight: 300;
-   font-size: 18px;
+.section7 .p-lite{
    line-height: 20px;
    color: #514F4F;
    padding-bottom: 10px;
@@ -589,7 +560,6 @@ footer .logotype{
    cursor: pointer;
 }
 footer .p-normal{
-   font-size: 20px;
    line-height: 22px;
    color: #000000;
    display: inline-block;
@@ -640,11 +610,6 @@ footer .p-normal{
    .sbg-right{
       margin-top: 0px;
    }
-   .background-svg{
-      background: none;
-      width: auto;
-      height: auto;
-   }
    footer .p-normal{
       padding: 0;
    }
@@ -664,4 +629,43 @@ footer .p-normal{
       flex-direction: column;
    }
 }
+@media (min-width:576px) and (max-width:767px) {
+   .background-svg{
+      min-height: 380px;
+   }
+}
+@media (min-width:480px) and (max-width:575px) {
+   .background-svg{
+      padding: 20% 10% 12% 12%;
+   }
+}
+@media (min-width:320px) and (max-width:479px) {
+   .background-svg{
+      min-height: 280px;
+      padding: 14% 7% 5% 10%;
+   }
+   .subtitle{
+      font-size: 16px;
+   }
+   .subtitle-items{
+      font-size: 18px;
+      line-height: 18px;
+   }
+   .p-lite{
+      font-size: 14px;
+      line-height: 20px;
+   }
+   .p-normal{
+      font-size: 16px;
+      line-height: 20px;
+   }
+}
+@media (min-width:1px) and (max-width:575px) {
+   .my-flex1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
 
+}
