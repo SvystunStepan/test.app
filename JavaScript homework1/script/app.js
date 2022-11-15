@@ -15,20 +15,25 @@
 
 // 2.=========================================
 
-var names=[];
-for (var i = 0; i < 5; i++) {
-  names [i] = prompt("введіть любе імя:");
+
+let names=[];
+for (let i = 0; i < 5; i++) {
+  names [i] = prompt('введіть любе імя:');   
+  if (names [i] == '') { 
+    alert('введіть лаконічне імя!');
+    //return;
+  } else {
+    names.push[i];
+  }
 }
 console.log(names);
-var user = prompt ("введіть імя користувача:");
+
+let user = prompt ('введіть імя користувача:');
 if (names.indexOf(user) != -1) {
-  alert(user + " ви успішно ввійшли!");
+  alert(user + ' ви успішно ввійшли!');
 } else {
-  alert ("Помилка!");
+  alert ('Помилка!');
 }
-
-
-
 
 // ЗНАЙШОВ В ІНТЕРНЕТІ НА ЯКОМУСЬ ФОРУМІ
 
