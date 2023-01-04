@@ -1,0 +1,43 @@
+.timer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 20px 0;
+    max-width: 300px;
+    padding: 10px 20px;
+    border: solid 3px grey;
+    border-radius: 10px;
+}
+.time{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+}
+.buttons{
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.start{
+    background-color: rgb(4, 235, 4);
+}
+.clear{
+    background-color: red;
+}
+/* .pause{
+    background-color: rgb(4, 235, 4);
+} */
+/* .continue{
+    background-color: rgb(42, 123, 245);
+} */
