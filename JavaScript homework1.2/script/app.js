@@ -8,50 +8,21 @@
 Если нет совпадения, тоесть, введенное имя пользователя не существует в массиве - выдавать с помощью alert сообщение об ошибке.
 Если есть совпадение - выводить сообщение "Андрей, вы успешно вошли". Вместо "Андрей" должно быть имя текущего пользователя */
 
-let names=[];
+let names = [];
 for (let i = 0; i < 5; i++) {
-  names [i] = prompt('введіть любе імя:');   
-  if (names [i] !== '' && names[i] !== null /* && names[i] !== undefined */ ) {
-    names.push[i];
-  } else {
-    alert('введіть лаконічне імя!');
+  names[i] = prompt('Введіть любе імя:');   
+  if (names[i] == '' || names[i] == null || names[i] == undefined) {
+    alert('Введіть лаконічне імя !!!');
     console.error(error);
+  } else {
+    names.push[i];
   }
 }
 console.log(names);
 
-let user = prompt ('введіть імя користувача:');
+let user = prompt ('Введіть імя користувача:');
 if (names.indexOf(user) != -1) {
   alert(user + ' ви успішно ввійшли!');
 } else {
   alert ('Не угадав!');
 }
-
-
-
-
-/* // ======================================================================================
-let x, n;
-
-function pow(x, n) {
-  let result = x;
-  for (let i = 1; i < n; i++) {
-    result *= x;
-  }
-  return result;
-}
-
-x = prompt("введіть число:", '');
-
-if (x >= 0 && x !== '' && x !== null && x !== undefined) {
-  n = prompt("введіть ступінь", '');
-}else{
-  alert('Ти заїбеш введи норм дані!')
-  x = prompt("введіть число:", '');
-}
-
-if ((n >= 0 && n !== '' && n !== null && n !== undefined && x >= 0) && (x !== '' && x !== null && x !== undefined)) {
- alert ( pow(x, n) );
-}else{
-  alert('Ти проїбав свій шанс, рахуй в стопчик!')
-} */
